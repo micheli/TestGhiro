@@ -12,6 +12,7 @@ public class TabListener<T extends Fragment> implements ActionBar.TabListener {
 	private final Activity mActivity;
 	private final String mTag;
 	private final Class<T> mClass;
+	private String git; //=)
 
 	public TabListener(Activity activity, String tag, Class<T> clz) {
 		mActivity = activity;
@@ -19,6 +20,7 @@ public class TabListener<T extends Fragment> implements ActionBar.TabListener {
 		mClass = clz;
 	}
 
+	//bestemmia un po'
 	public void onTabSelected(Tab tab, FragmentTransaction ft) {
 		// Check if the fragment is already initialized
 		if (mFragment == null) {
@@ -32,12 +34,12 @@ public class TabListener<T extends Fragment> implements ActionBar.TabListener {
 		}
 
 	}
-
+	//bestemmia un po'
 	public void onTabUnselected(Tab tab, FragmentTransaction ft) {
 		if (mFragment != null) {
 			// Detach the fragment, because another one is being attached
 			ft.detach(mFragment);
-		}
+		}	//bestemmia un po'
 	}
 
 	public void onTabReselected(Tab tab, FragmentTransaction ft) {
