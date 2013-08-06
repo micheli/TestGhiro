@@ -24,6 +24,7 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 			String tab2_txt = getResources().getString(R.string.app_name);
 
 
+			//tab1
 			
 			Tab tab1 = ab
 					.newTab()
@@ -33,6 +34,7 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 									Listview_1.class));
 			ab.addTab(tab1);
 
+			//tab2
 			Tab tab2 = ab
 					.newTab()
 					.setText(tab2_txt + " 2")
@@ -43,6 +45,7 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 
 		}
 
+		//prossimo step fare il menu
 		@Override
 		public boolean onCreateOptionsMenu(com.actionbarsherlock.view.Menu menu) {
 			// TODO Auto-generated method stub
