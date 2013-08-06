@@ -12,6 +12,7 @@ public class TabListener<T extends Fragment> implements ActionBar.TabListener {
 	private final Activity mActivity;
 	private final String mTag;
 	private final Class<T> mClass;
+	private String git; //=)
 
 	public TabListener(Activity activity, String tag, Class<T> clz) {
 		mActivity = activity;
