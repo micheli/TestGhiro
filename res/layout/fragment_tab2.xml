@@ -5,31 +5,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ciao, qui ti fai una lista che contiene (per ogni riga) un'immagine e un testo =)" 
-        android:paddingBottom="100dp"/>
+    <ListView
+        android:id="@+id/tab2listview"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:layout_weight="2" >
+    </ListView>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/casellaDiTesto"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="poi aggiungiamo un EditText nella quale posso inserire qualunque testo"
-        android:gravity="center_vertical"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:ems="10"
+        android:hint="Inserisci quello che vuoi" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/bottone_cambia_attivita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="da qui parte una nuova activity a cui passerai il valore inserito nell'EditText e lo stamperai con gli opportuni controlli" />
+        android:text="da qui parte una nuova activity a cui passerai il valore inserito nell&apos;EditText e lo stamperai con gli opportuni controlli" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Se usi l'acellerometro c'è qualcosa che non va... Risolvi!" />
-      
+        android:text="Se usi l&apos;acellerometro c&apos;è qualcosa che non va... Risolvi!" />
+
 </LinearLayout>
